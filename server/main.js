@@ -11,3 +11,5 @@ Meteor.startup(() => {
     },
   );
 });
+
+// google maps api key AIzaSyAJYsUQJGknptrOcD43JztqX3hF8TgvjSc
