@@ -1,17 +1,4 @@
 import React from 'react';
-import AccountsUIWrapper from './AccountsUIWrapper.jsx';
 
-export class Index extends React.Component {
-    render() {
-      return (
-        <div className="container">
-          <header>
-            <h1>Facebook Login</h1>
+export const Index = () => <h3>Index</h3>;
 
-            <AccountsUIWrapper />
-
-          </header>
-        </div>
-      );
-    }
-}
