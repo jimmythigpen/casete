@@ -1,4 +1,6 @@
 import React from 'react';
+import { browserHistory } from 'react-router';
+
 
 export class Login extends React.Component {
   handleClick() {
@@ -8,6 +10,8 @@ export class Login extends React.Component {
         console.log('Error logging in with Facebook: ', err);
         return false;
       }
+
+      browserHistory.replace('/')
     });
   }
 
