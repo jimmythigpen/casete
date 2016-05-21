@@ -1,5 +1,6 @@
 import React from 'react';
 import { browserHistory } from 'react-router';
+import { methods } from '../api/users/methods.js'
 
 
 export class Login extends React.Component {
@@ -11,7 +12,18 @@ export class Login extends React.Component {
         return false;
       }
 
-      browserHistory.replace('/')
+      if (Meteor.user().profile.hasSetPreferences) {
+        browserHistory.replace('/')
+      } else {
+        Meteor.call('users.updateFromFacebook', (err) => {
+          if (err) {
+            console.log('Error updating user from Google: ', err);
+            return false;
+          }
+
+          browserHistory.replace('/')
+        });
+      }
     });
   }
 
