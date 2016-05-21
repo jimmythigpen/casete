@@ -8,11 +8,11 @@ Paths.Schema = new SimpleSchema({
   endTime: {
     type: Date,
   },
-  startCordinates: {
+  startCoordinates: {
     type: [Object],
     optional: true,
   },
-  endCordinates: {
+  endCoordinates: {
     type: [Object],
     optional: true,
   },

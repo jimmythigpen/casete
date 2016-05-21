@@ -14,6 +14,7 @@
           'profile.email': email,
           'profile.gender': gender,
           'profile.avatar': avatar,
+          'profile.hasSetProfile': true,
         },
       });
 

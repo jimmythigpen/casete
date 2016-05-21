@@ -12,7 +12,7 @@ export class Login extends React.Component {
         return false;
       }
 
-      if (Meteor.user().profile.hasSetPreferences) {
+      if (Meteor.user().profile.hasSetProfile) {
         browserHistory.replace('/')
       } else {
         Meteor.call('users.updateFromFacebook', (err) => {

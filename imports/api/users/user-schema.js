@@ -15,5 +15,9 @@ Users.Schema = new SimpleSchema({
     type: String,
     optional: true,
   },
+  hasSetProfile: {
+    type: Boolean,
+    defaultValue: false,
+  },
 });
 
