@@ -1,6 +1,5 @@
 import { Meteor } from 'meteor/meteor';
 
-
 Meteor.startup(() => {
   ServiceConfiguration.configurations.upsert(
     { service: 'facebook' },
@@ -13,3 +12,4 @@ Meteor.startup(() => {
 });
 
 // google maps api key AIzaSyAJYsUQJGknptrOcD43JztqX3hF8TgvjSc
+

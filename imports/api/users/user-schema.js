@@ -1,15 +1,17 @@
-Users.BaseSchema = new SimpleSchema({
+Users.Schema = new SimpleSchema({
   firstName: {
     type: String,
   },
   lastName: {
     type: String,
   },
-  avatar: {
+  email: {
     type: String,
-    optional: true,
   },
-  zipcode: {
+  gender: {
+    type: String,
+  },
+  avatar: {
     type: String,
     optional: true,
   },
